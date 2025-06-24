@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Sistemas Operativos - Consola</title>
+</head>
+<body>
+    <div>
+        <h1>SEGUNDO TALLER SISTEMAS OPERATIVOS</h1>
+        <p>Este taller te ayudará a practicar conceptos básicos de JavaScript.</p>
+        <p><strong>Abre la Consola de tu navegador (F12 o Ctrl+Shift+I) para ver los resultados de muchos ejercicios.</strong></p>
+
+        <!-- Sección de Creación de Archivos (Puntos a y b) -->
+        <div>
+            <h3>1. Creación de Archivos (Para que sepas cómo se haría)</h3>
+            <p><strong>a)</strong> Para crear un archivo con extensión `.html` y otro con extensión `.js` almacenados en una carpeta llamada `Taller`, simplemente debes crear una carpeta en tu computadora con ese nombre y dentro de ella, crear estos dos archivos vacíos.</p>
+            <p><strong>b)</strong> Para abrir uno de los siguientes ejercicios propuestos utilizando Visual Studio Code, solo tienes que arrastrar el archivo `index.html` (este mismo archivo) a la ventana de Visual Studio Code.</p>
+        </div>
+
+        <!-- Sección de Ejercicios JavaScript -->
+        <div>
+            <h3>2. Realizar los siguientes ejercicios desarrollados en JavaScript:</h3>
+
+            <!-- Ejercicio c: Alert de "Bienvenidos" -->
+            <h4>c) Mensaje de Bienvenida</h4>
+            <p>Escribe un programa que haga que aparezca en la pantalla un `alert` que diga "Bienvenidos a la programación web".</p>
+            <button onclick="mostrarBienvenida()">Mostrar Bienvenida</button>
+
+            <!-- Ejercicio d: Mensaje de "Bienvenidos" en pantalla y modificar "Programacion web" -->
+            <h4>d) Modificar texto en pantalla</h4>
+            <p>Escribe un programa que imprima en la pantalla un texto que diga "Bienvenidos" y luego lo modifique por: "Programación web".</p>
+            <p id="textoAModificar">Bienvenidos</p>
+            <button onclick="modificarTexto()">Modificar Texto</button>
+
+            <!-- Ejercicio e: Sumar 3 + 5 con prompt y mostrar en alert -->
+            <h4>e) Suma y Nombre de Usuario</h4>
+            <p>Escribe un programa que pida el nombre del usuario con un `prompt` y escriba en un `alert` que diga "Hola Nombre_Usuario". Adicionalmente, que muestre el resultado de sumar 3 + 5.</p>
+            <button onclick="saludarYSumar()">Saludar y Sumar</button>
+
+            <!-- Ejercicio f: Sumar, restar, multiplicar, dividir y módulo de dos números -->
+            <h4>f) Operaciones Básicas</h4>
+            <p>Escribe un programa que pida un número y pida otro número, y escriba el resultado de: sumar, restar, multiplicar, dividir y el módulo de esos dos números.</p>
+            <button onclick="operacionesBasicas()">Realizar Operaciones</button>
+
+            <!-- Ejercicio g: El mayor de tres números -->
+            <h4>g) Mayor de Tres Números</h4>
+            <p>Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.</p>
+            <button onclick="encontrarMayor()">Encontrar Mayor</button>
+            <p id="mayorDeTresResultado">(Ver resultado en consola)</p>
+
+            <!-- Ejercicio h: Tabla de multiplicar hasta el 25 -->
+            <h4>h) Tabla de Multiplicar</h4>
+            <p>Escribe un programa que pida un número y realice la tabla de multiplicar hasta el 25 de los números impares únicamente.</p>
+            <input type="number" id="numeroTabla" placeholder="Introduce un número">
+            <button onclick="generarTabla()">Generar Tabla</button>
+            <div id="tablaResultado">(Ver resultado en consola)</div>
+
+            <!-- Ejercicio i: Serie del 1 al 10 en chips -->
+            <h4>i) Serie del 1 al 10 en "Chips"</h4>
+            <p>Escribe un programa que pida un número de 1 a 10 y muestre como se realice en chips.</p>
+            <input type="number" id="numeroChips" placeholder="Introduce un número (1-10)">
+            <button onclick="generarChips()">Generar Chips</button>
+            <div id="chipsResultado"></div>
+
+            <!-- Ejercicio j: Contraseña de acceso -->
+            <h4>j) Contraseña de Acceso</h4>
+            <p>Realize un script que pida la contraseña de acceso a una página web y compruebe si es la misma que la almacenada en una variable. Si es correcta, se da la bienvenida, sino se la volverá a pedir.<br><strong>Nota: Contraseña= Inesco2025</strong></p>
+            <input type="password" id="contrasena" placeholder="Introduce la contraseña">
+            <button onclick="verificarContrasena()">Verificar Contraseña</button>
+            <p id="contrasenaResultado">(Ver resultado en consola)</p>
+        </div>
+
+        <div>
+            <h3>3. Actividad Rafael Pombo</h3>
+            <p>Haz clic en el siguiente botón para acceder a la actividad de Rafael Pombo:</p>
+            <button onclick="location.href='rafael_pombo.html'">Ir a la actividad Rafael Pombo</button>
+        </div>
+    </div>
+
+    <!-- Enlazar el archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
